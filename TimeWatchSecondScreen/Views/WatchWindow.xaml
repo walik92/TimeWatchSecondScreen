@@ -5,19 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TimeWatchSecondScreen.Views"
         mc:Ignorable="d"
-        Title="WatchWindow">
+        Title="WatchWindow" Background="#FFF98009" MinHeight="400" MinWidth="400" Height="600" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition Width="98" />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Label Content="{Binding Time}" ContentStringFormat="HH:mm:ss" Grid.Column="1" Grid.Row="1"
-               HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+               HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF363636"
+               FontSize="72" FontWeight="Bold" Foreground="#FFF98009" />
     </Grid>
 </Window>
