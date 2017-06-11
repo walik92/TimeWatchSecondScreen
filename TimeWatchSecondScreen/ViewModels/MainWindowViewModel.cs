@@ -6,13 +6,13 @@ using System.Windows.Forms;
 using System.Windows.Input;
 using TimeWatchSecondScreen.Commands;
 using TimeWatchSecondScreen.Views;
-using MessageBox = System.Windows.Forms.MessageBox;
+using MessageBox = System.Windows.MessageBox;
 
 namespace TimeWatchSecondScreen.ViewModels
 {
     public class MainWindowViewModel
     {
-        #region methods
+        #region Methods
 
         /// <summary>
         ///     Show WatchWindow if second screen is available

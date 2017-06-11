@@ -38,7 +38,7 @@ namespace TimeWatchSecondScreen.ViewModels
 
         #endregion //Events
 
-        #region methods
+        #region Methods
 
         /// <summary>
         ///     Init DispatcherTimer for refresh Time property
