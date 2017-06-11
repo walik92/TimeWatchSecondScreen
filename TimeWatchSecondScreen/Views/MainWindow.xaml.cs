@@ -14,6 +14,7 @@ namespace TimeWatchSecondScreen
         {
             InitializeComponent();
             _viewModel = new MainWindowViewModel();
+            Closing += _viewModel.OnWindowClosing;
             DataContext = _viewModel;
         }
     }
