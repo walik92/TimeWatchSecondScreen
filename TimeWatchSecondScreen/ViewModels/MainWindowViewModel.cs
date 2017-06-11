@@ -22,8 +22,9 @@ namespace TimeWatchSecondScreen.ViewModels
             if (_watchWindow != null)
                 throw new Exception("Watch window is open");
 
+            int left = GetLeftEdgeSecondaryScreen();
             _watchWindow = new WatchWindow();
-            _watchWindow.Left = GetLeftEdgeSecondaryScreen();
+            _watchWindow.Left = left;
             _watchWindow.Closed += CloseWatchWindow;
             _watchWindow.Show();
             _watchWindow.WindowState = WindowState.Maximized;
